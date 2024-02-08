@@ -1,0 +1,195 @@
+/* Resetten van de standaardmarges en het instellen van het lettertype */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Stijlen voor de header en footer */
+header,
+footer {
+    width: 100%;
+    background-color: #F5720C;
+}
+
+/* Stijlen voor de header */
+header {
+    color: white;
+    display: flex;
+    height: 24vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Marges voor de tekstinhoud van de header */
+header p,
+h1,
+h3 {
+    margin: 11px;
+}
+
+/* Stijlen voor de navigatiebalk */
+nav {
+    background-color: #BE5505;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4vh;
+}
+
+/* Stijlen voor de navigatiekoppelingen */
+nav a {
+    margin-left: 30px;
+}
+
+/* Algemene stijlen voor koppelingen */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Stijlen voor de gele lijn */
+#gele-lijn {
+    background-color: gold;
+    width: 100%;
+    height: 0.4vh;
+}
+
+/* Stijlen voor de informatie-sectie op de indexpagina */
+#informatie-index {
+    display: flex;
+}
+
+/* Stijlen voor de informatie-sectie op de tarievenpagina */
+#informatie-tarieven {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Algemene stijlen voor de informatie-sectie */
+.informatie {
+    display: flex;
+}
+
+/* Stijlen voor de linker sectie van de informatie */
+.linkerkant {
+    background-color: #FFB886;
+    width: 25%;
+    padding: 25px;
+}
+
+/* Stijlen voor de omliggende doos van de informatie */
+.box-around {
+    padding: 25px;
+    background-color: white;
+}
+
+/* Stijlen voor de oranje koppen */
+.oranje-kop {
+    color: #BB5211;
+}
+
+/* Stijlen voor afbeeldingen */
+.img {
+    height: auto;
+    width: 16vw;
+    margin: 15px;
+}
+
+/* Stijlen voor afbeeldingen aan de linkerkant */
+.img-links {
+    height: auto;
+    width: 16vw;
+    margin: 15px;
+}
+
+/* Stijlen voor de foto van Hannah */
+#foto-hannah {
+    float: right;
+}
+
+/* Stijlen voor de foto van Jesse */
+#foto-jesse {
+    float: left;
+}
+
+/* Mediaquery voor het aanpassen van lay-out bij schermen kleiner dan 1000px */
+@media only screen and (max-width: 1000px) {
+    /* Flexrichting veranderen naar kolom bij kleinere schermen */
+    .informatie {
+        flex-direction: column;
+        background-color: #FFB886;
+    }
+
+    /* Breedte van de linker sectie 100% bij kleinere schermen */
+    .linkerkant {
+        width: 89%;
+        margin-right: auto;
+    }
+
+    /* Aanpassen van afbeeldingsformaten bij kleinere schermen */
+    .img-links {
+        height: auto;
+        width: 300px;
+    }
+
+    .img {
+        height: auto;
+        width: 150px;
+    }
+
+    /* Aanpassen van navigatiestijlen bij kleinere schermen */
+    nav {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    /* Aanpassen van marges voor navigatiekoppelingen bij kleinere schermen */
+    nav a {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+}
+
+/* Algemene stijlen voor tekstinvoervelden */
+.text-input {
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    border-color: grey;
+    margin-bottom: 20px;
+}
+
+/* Stijlen voor tekstgebieden */
+textarea {
+    min-height: 200px;
+}
+
+/* Stijlen voor de verzendknop */
+#verzend-knop {
+    background-color: #BE5505;
+    height: 40px;
+    color: white;
+    border: none;
+}
+
+/* Stijlen voor de iframe, gebruikt voor het insluiten van Google Maps */
+iframe {
+    border: none;
+    width: 100%;
+    height: 500px;
+}
+
+/* Stijlen voor de footer */
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Stijlen voor paragrafen in de footer */
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Definieert het document type als HTML5 -->
+
+<html lang="nl"> <!-- Opent het HTML-document en geeft de taal aan -->
+
+<head>
+    <title>Muziekschool H&J</title> <!-- Definieert de paginatitel -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Definieert de viewport-instellingen voor een responsieve weergave -->
+    <meta charset="utf-8"> <!-- Specificeert de karaktercodering van het document -->
+    <meta name="description" content="a music school made by Jesee and hannah"> <!-- Geeft een korte beschrijving van de pagina -->
+    <meta name="keywords" content="music, school, music-school, koperblazers, saxofonisten, jazz"> <!-- Specificeert trefwoorden voor zoekmachines -->
+    <meta name="author" content="jesse"> <!-- Specificeert de auteur van de pagina -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Koppelt het HTML-document aan een extern stylesheetbestand -->
+</head>
+
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1> <!-- Koptekst van de pagina -->
+        <h3>Contact</h3> <!-- Subtitel van de pagina -->
+    </header>
+    <div>
+        <nav>
+            <a href="index.html">Home</a> <!-- Navigatiekoppeling naar de startpagina -->
+            <a href="overons.html">Over ons</a> <!-- Navigatiekoppeling naar de 'Over ons' pagina -->
+            <a href="tarieven.html">Tarieven</a> <!-- Navigatiekoppeling naar de 'Tarieven' pagina -->
+            <a href="contact.html">Contact</a> <!-- Navigatiekoppeling naar de 'Contact' pagina -->
+        </nav>
+        <div id="gele-lijn"></div> <!-- Een decoratieve lijn binnen de navigatie -->
+    </div>
+    <div class="informatie">
+        <div class="linkerkant">
+            <article>
+                <h2>Adresgegevens</h2> <!-- Titel van het artikel -->
+                <p>
+                    Muziekschool H&J<br> <!-- Adresgegevens van de muziekschool -->
+                    t.a.v Hannah en Jesse<br>
+                    Industrieterrein 37<br>
+                    5981 NK Panningen<br>
+                    0123-456789<br>
+                    muziekschoolhj@inlook.com
+                </p>
+                <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(NHA%20opleidingen)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <!-- Ingebedde Google Maps kaart met de locatie van de muziekschool -->
+            </article>
+        </div>
+        <div class="box-around">
+            <article>
+                <h2 class="oranje-kop">Contact</h2> <!-- Titel van het artikel met een speciale klasse voor opmaak -->
+                <h5>U kunt een bericht achterlaten via onderstaand contactformulier.</h5> <!-- Ondertitel van het artikel -->
+                <form> <!-- Contactformulier -->
+                    <label>Uw voornaam</label> <!-- Label voor invoerveld voor voornaam -->
+                    <input type="text" placeholder="Uw Voornaam" class="text-input"> <!-- Invoerveld voor voornaam -->
+                    <label>Uw achternaam</label> <!-- Label voor invoerveld voor achternaam -->
+                    <input type="text" placeholder="Uw achternaam" class="text-input"> <!-- Invoerveld voor achternaam -->
+                    <label>Uw e-mailadres</label> <!-- Label voor invoerveld voor e-mailadres -->
+                    <input type="email" placeholder="Uw e-mailadres" class="text-input"> <!-- Invoerveld voor e-mailadres -->
+                    <label>Land</label> <!-- Label voor selectie van land -->
+                    <select class="text-input"> <!-- Selectie voor land -->
+                        <option>Nederland</option> <!-- Optie voor Nederland -->
+                        <option>Duitsland</option> <!-- Optie voor Duitsland -->
+                        <option>Belgie</option> <!-- Optie voor België -->
+                        <option>Congo</option> <!-- Optie voor Congo -->
+                        <option>Usa</option> <!-- Optie voor USA -->
+                        <option>Uk</option> <!-- Optie voor Verenigd Koninkrijk -->
+                        <option>Oostenrijk</option> <!-- Optie voor Oostenrijk -->
+                        <option>Griekeland</option> <!-- Optie voor Griekenland -->
+                        <option>Spanje</option> <!-- Optie voor Spanje -->
+                    </select>
+                    <label>Bericht</label> <!-- Label voor invoerveld voor bericht -->
+                    <textarea placeholder="Uw bericht" class="text-input"></textarea> <!-- Invoerveld voor bericht -->
+                    <input type="submit" id="verzend-knop"> <!-- Verzendknop -->
+                </form>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p><strong>© Copyright 2021 Muziekschool H&J</strong></p> <!-- Copyright vermelding -->
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p> <!-- Disclaimer -->
+    </footer>
+</body>
+
+</html>
